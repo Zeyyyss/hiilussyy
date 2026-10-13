@@ -1,0 +1,566 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Lusi, obviously ♡</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #fff5f7;
+  color: #704653;
+  overflow-x: hidden;
+}
+
+.heart {
+  position: fixed;
+  top: -25px;
+  color: #ef9db6;
+  animation: fall linear forwards;
+  pointer-events: none;
+  z-index: 5;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 23px;
+  background:
+    radial-gradient(ellipse at top, #ffe1ea, transparent 65%),
+    #fff5f7;
+}
+
+.small {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #c17c91;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(55px, 14vw, 90px);
+  font-weight: 500;
+  color: #bd718b;
+}
+
+.subtitle {
+  font-size: 14px;
+  line-height: 2;
+  max-width: 320px;
+  margin: 20px auto 30px;
+  color: #916a77;
+}
+
+button {
+  border: none;
+  background: #cf829b;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 40px;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 8px 25px #dba3b455;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  background: #b96783;
+}
+
+.heart-icon {
+  font-size: 28px;
+  margin-bottom: 22px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  50% { transform: scale(1.2); }
+}
+
+section {
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.section-label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #c17c91;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  color: #a85f79;
+}
+
+.message {
+  max-width: 465px;
+  margin: auto;
+  font-size: 14px;
+  line-height: 2.1;
+  color: #876571;
+}
+
+.note { background: #fce7ed; }
+
+.card {
+  max-width: 450px;
+  margin: 30px auto 0;
+  background: #ffffffb8;
+  border: 1px solid #f4dce4;
+  border-radius: 22px;
+  padding: 27px 23px;
+  box-shadow: 0 12px 35px #d7a5b41a;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.divider {
+  color: #dca1b4;
+  margin: 22px 0;
+  letter-spacing: 8px;
+}
+
+.hidden-letter {
+  display: none;
+  text-align: left;
+  margin: 25px auto 0;
+  padding: 25px;
+  max-width: 450px;
+  background: #fffafb;
+  border-radius: 18px;
+  font-size: 14px;
+  line-height: 2.15;
+  animation: appear .7s ease;
+  white-space: pre-line;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  text-align: center;
+  padding: 45px 20px;
+  font-size: 12px;
+  line-height: 2;
+  color: #b07e8e;
+}
+
+footer span { color: #d7839f; }
+
+.tiny {
+  font-size: 11px;
+  color: #b58a98;
+  margin-top: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="heart-icon">♡</div>
+
+  <p class="small">a little thing i made for you</p>
+
+  <h1>Hi, Lusi.</h1>
+
+  <p class="subtitle">
+    So... I made you a website.<br>
+    Iya, website. Bukan aplikasi pinjol,
+    tenang aja. 😭
+    <br><br>
+    Ada sedikit things yang pengin aku
+    ceritain ke kamu.
+  </p>
+
+  <button onclick="document.getElementById('cerita').scrollIntoView({behavior:'smooth'})">
+    Okay, tell me ♡
+  </button>
+</header>
+
+<section id="cerita">
+  <p class="section-label">01 — first of all</p>
+
+  <h2>How have you been,<br>Lus?</h2>
+
+  <div class="message">
+    Hai, Lusi. Apa kabar kamu akhir-akhir ini?
+
+    <br><br>
+
+    I hope life's treating you well.
+    Semoga kamu sehat, bahagia, dan nggak
+    terlalu capek sama dunia yang kadang
+    suka banyak maunya ini.
+
+    <br><br>
+
+    Kita akhir-akhir ini jarang ngobrol, ya?
+    Kinda miss our little conversations, honestly.
+
+    <br><br>
+
+    Kadang ada aja hal random yang bikin aku
+    pengin cerita ke kamu. Terus pas mau chat,
+    aku malah mikir, "Hmm, should I text her?"
+
+    <br><br>
+
+    See? Bahkan mau nge-chat aja bisa
+    pakai rapat internal dulu. 😭
+  </div>
+</section>
+
+<section class="note">
+  <p class="section-label">02 — plot twist</p>
+
+  <h2>Guess what?</h2>
+
+  <div class="card">
+    <p>
+      Ternyata aku masih sering kangen kamu.
+      Quite a lot, actually.
+    </p>
+
+    <div class="divider">♡ ♡ ♡</div>
+
+    <p>
+      Bukan berarti tiap detik aku mandangin
+      langit sambil dengerin lagu galau, ya.
+      I still have a life. WKWK.
+    </p>
+
+    <div class="divider">♡</div>
+
+    <p>
+      Tapi kadang, di tengah hari yang biasa aja,
+      tiba-tiba aku inget kamu.
+      And somehow, that little thought
+      makes me smile.
+    </p>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">03 — the honest part</p>
+
+  <h2>It's you, somehow.</h2>
+
+  <div class="message">
+    Aku nggak tahu gimana cara jelasinnya
+    tanpa kedengeran cheesy banget.
+
+    <br><br>
+
+    But you mean something to me, Lusi.
+    More than I probably show.
+
+    <br><br>
+
+    Aku suka ngobrol sama kamu.
+    Aku suka tahu cerita kamu.
+    Aku suka hal-hal kecil tentang kamu
+    yang mungkin menurut kamu biasa aja.
+
+    <br><br>
+
+    And yes, I care about you.
+    A lot, actually.
+
+    <br><br>
+
+    Kalau ditanya kenapa, aku juga nggak
+    punya presentasi PowerPoint buat menjelaskannya.
+    I just do. That's it. 🤍
+  </div>
+</section>
+
+<section class="note">
+  <p class="section-label">04 — complicated things</p>
+
+  <h2>Right person,<br>wrong timing?</h2>
+
+  <div class="message">
+    Sometimes I wonder about us.
+
+    <br><br>
+
+    Kita dekat, kita punya cerita,
+    tapi kita juga nggak punya label
+    yang bisa dengan gampang aku jelasin.
+
+    <br><br>
+
+    And honestly, sometimes I don't know
+    where I stand.
+
+    <br><br>
+
+    Aku pengin bilang kangen, tapi suka
+    mikir dulu. Pengin ngobrol, tapi kadang
+    bingung harus mulai dari mana.
+
+    <br><br>
+
+    Takut ganggu, takut salah paham,
+    takut terlalu berharap.
+
+    <br><br>
+
+    Basically, my brain has too many tabs open.
+    And somehow, most of them are about you. 😭
+
+    <br><br>
+
+    Tapi aku nggak bikin ini supaya kamu
+    merasa harus melakukan sesuatu.
+    I just want to be honest, at least once.
+  </div>
+</section>
+
+<section>
+  <p class="section-label">05 — one little letter</p>
+
+  <h2>Open when<br>you're ready ♡</h2>
+
+  <p class="message">
+    Okay, this is the slightly serious part.
+    No jokes for a moment. Maybe.
+  </p>
+
+  <br>
+
+  <button id="tombolSurat" onclick="bukaSurat()">
+    Open my letter 💌
+  </button>
+
+  <div class="hidden-letter" id="surat">Hi, Lus. 🤍
+
+First of all, thank you for being you.
+
+Aku nggak tahu apakah kamu sadar atau nggak,
+tapi kamu punya tempat tersendiri di hati aku.
+
+And I really mean that.
+
+Aku sayang banget sama kamu.
+Mungkin selama ini aku nggak selalu nunjukin,
+mungkin juga aku terlalu sering menyimpan
+semuanya sendiri.
+
+Tapi perasaan itu ada, Lus.
+
+Aku kangen ngobrol sama kamu.
+Kangen denger cerita random kamu.
+Kangen hal-hal kecil yang mungkin bahkan
+nggak kamu anggap spesial.
+
+It's funny, isn't it?
+
+Kita bahkan nggak punya status yang jelas,
+tapi somehow aku bisa punya perasaan
+sedalam ini ke kamu.
+
+Kadang aku pengin bilang semuanya langsung,
+tapi selalu ada bagian dari diriku yang
+berpikir, "What if things get awkward?"
+
+Jadi, ya... here I am.
+A whole website instead of one honest text.
+Very normal behavior, right? WKWK. 😭
+
+But jokes aside, aku beneran sayang sama kamu.
+
+Aku nggak tahu kita nantinya bakal jadi apa.
+Aku nggak bisa janji semuanya akan berjalan
+sesuai yang aku harapkan.
+
+And I don't expect you to feel the same
+just because I feel this way.
+
+Aku cuma pengin kamu tahu.
+
+Kalau suatu saat kamu ngerasa dunia lagi
+berat, I hope you remember that someone
+out there genuinely wishes you well.
+
+Kalau suatu saat kamu kangen ngobrol sama aku,
+you can always say hi.
+
+Nggak harus ada alasan khusus.
+Nggak harus nunggu momen yang tepat.
+
+A simple "hey, Zid" would probably
+make my day more than you think. 🤍
+
+Thank you for being part of my story, Lusi.
+
+Whatever happens next, I'm glad I got
+to know you.
+
+Please take care of yourself, okay?
+
+And don't forget to smile.
+You look better when you're happy.
+(Okay, that was cheesy. I'm sorry. 😭)
+
+— from Zidan,
+with a little more love than he knows
+how to explain. ♡</div>
+</section>
+
+<section class="note">
+  <div class="heart-icon">♡</div>
+
+  <p class="section-label">06 — before you go</p>
+
+  <h2>One last thing.</h2>
+
+  <div class="message">
+    Kamu nggak perlu kasih jawaban apa-apa
+    setelah baca ini.
+
+    <br><br>
+
+    No pressure, no expectations.
+    Aku cuma pengin berbagi sedikit
+    isi hati aku sama kamu.
+
+    <br><br>
+
+    Semoga hari-hari kamu baik, ya, Lus.
+    Semoga banyak hal baik datang ke kamu.
+    Semoga kamu selalu punya alasan
+    buat bahagia.
+
+    <br><br>
+
+    And if life ever gets a little too much,
+    I hope things get easier for you.
+
+    <br><br>
+
+    Take care, Lusi.
+    Don't skip meals, don't overthink too much,
+    and please get enough sleep.
+
+    <br><br>
+
+    I know, I sound like your mom now.
+    BUT SOMEONE HAS TO SAY IT. 😭
+  </div>
+</section>
+
+<footer>
+  made with love, a little courage,<br>
+  and probably too much overthinking.
+
+  <br><br>
+
+  <span>For Lusi, from Zidan ♡</span>
+
+  <p class="tiny">
+    p.s. yes, i really made a whole website for you.
+    no, i don't know how to explain myself either.
+  </p>
+</footer>
+
+<script>
+function buatHati() {
+  const heart = document.createElement('div');
+  heart.className = 'heart';
+
+  const pilihan = ['♡', '♥', '❤', '💕'];
+  heart.textContent =
+    pilihan[Math.floor(Math.random() * pilihan.length)];
+
+  heart.style.left = Math.random() * 100 + 'vw';
+  heart.style.fontSize = (12 + Math.random() * 16) + 'px';
+  heart.style.opacity = 0.3 + Math.random() * 0.5;
+  heart.style.animationDuration = (6 + Math.random() * 5) + 's';
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 12000);
+}
+
+setInterval(buatHati, 750);
+
+function bukaSurat() {
+  const surat = document.getElementById('surat');
+  const tombol = document.getElementById('tombolSurat');
+
+  const terbuka = surat.style.display === 'block';
+
+  surat.style.display = terbuka ? 'none' : 'block';
+  tombol.textContent = terbuka
+    ? 'Open my letter 💌'
+    : 'Close letter ♡';
+
+  if (!terbuka) {
+    setTimeout(() => {
+      surat.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
+    }, 100);
+  }
+}
+</script>
+
+</body>
+</html>
+<div id="music-player">
+  <button id="music-button" onclick="toggleMusic()">
+    ♫ Play our song
+  </button>
+  <iframe
+    id="music-frame"
+    width="0"
+    height="0"
+    src=""
+    title="Glue Song by beabadoobee"
+    allow="autoplay; encrypted-media"
+    style="display:none">
+  </iframe>
+</div>
+
